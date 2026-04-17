@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Town-Trek</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#0b2545;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="Town.html">
+            <img src="Town-trek.jpg" alt="logo" width="80" height="60" class="me-2">
+            <span class="fw-bold">Town-Trek - Local Guide</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapsse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="Town.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="Town.html#how-it-works">Flow</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="Trip.html">Trip</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="Town.html#contact">Contact</a></li>
+
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+<!-- Form-->
+<section class="container my-5">
+    <div class="card shadow p-4">
+        <h3 class="text-primary mb-4 text-center">Plan Your Trip</h3>
+        
+        <form id="tripForm">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Full Name</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Email</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label class="form-label fw-bold">City / Destination</label>
+            <input type="text" id="destination" class="form-control" required>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label fw-bold">From Date</label>
+            <input type="date" id="fromDate" class="form-control" required>
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label fw-bold">To Date</label>
+            <input type="date" id="toDate" class="form-control" required>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary px-4">Submit</button>
+        <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+    </div>
+</form>
+
+        
+    </div>
+</section>
+
+<!-- Table Section -->
+<section class="container my-5">
+    <div class="card shadow p-4">
+        <h3 class="text-primary mb-4 text-center">Planned Trips</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle" id="tripTable">
+                <thead class="table-primary">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Destination</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Charan</td>
+                        <td>charan@gmail.com</td>
+                        <td>Hyderabad</td>
+                        <td>10-Feb-2025</td>
+                        <td>15-Feb-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Rahul</td>
+                        <td>rahul@gmail.com</td>
+                        <td>Bangalore</td>
+                        <td>20-Mar-2025</td>
+                        <td>25-Mar-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Anjali</td>
+                        <td>anjali@gmail.com</td>
+                        <td>Chennai</td>
+                        <td>05-Apr-2025</td>
+                        <td>10-Apr-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Vikram</td>
+                        <td>vikram@gmail.com</td>
+                        <td>Pune</td>
+                        <td>12-May-2025</td>
+                        <td>18-May-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Sneha</td>
+                        <td>sneha@gmail.com</td>
+                        <td>Delhi</td>
+                        <td>01-Jun-2025</td>
+                        <td>06-Jun-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Arjun</td>
+                        <td>arjun@gmail.com</td>
+                        <td>Jaipur</td>
+                        <td>15-Jul-2025</td>
+                        <td>20-Jul-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Pooja</td>
+                        <td>pooja@gmail.com</td>
+                        <td>Kochi</td>
+                        <td>08-Aug-2025</td>
+                        <td>13-Aug-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Rohan</td>
+                        <td>rohan@gmail.com</td>
+                        <td>Kolkata</td>
+                        <td>22-Sep-2025</td>
+                        <td>27-Sep-2025</td>
+                        <td><button class="btn btn-outline-primary btn-sm">Book</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer-->
+<footer style="background-color: #0b2545;" class="text-light py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-start">
+                <p class="mb-0-small">&copy; 2025 TownTrek. All rights reserved</p>
+            </div>
+            <div class="col-md-6 text-end">
+                  <ul class="list-inline mb=0">
+                    <li class="list-inline-item"><a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white fs-5"><i class="fab fa-snapchat"></i></a></li>
+
+                  </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Trips.js"></script>
+
+</body>
+</html>

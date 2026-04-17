@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Town-Trek</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        #how-it-works .card-img-top {
+    height: 220px;         
+    object-fit: cover;    
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#0b2545;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="Town.html">
+            <img src="Town-trek.jpg" alt="Town-Trek logo" width="80" height="60" class="me-2">
+            <span class="fw-bold">Town-Trek - Local Guide</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="Town.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="Town.html#how-it-works">Flow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="Trip.html">Trip</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold text-white" href="Town.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="australia.png" class="d-block w-100" alt="Australia">
+            <div class="carousel-caption d-none d-md-block text-white">
+                <h1 class="fw-bold display-5">Town-Trek</h1>
+                <p class="fst-italic fs-5">Do visit, Enjoy your time</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="antartica.avif" class="d-block w-100" alt="Antarctica">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="fw-bold">Town-Trek</h1>
+                <p>Explore beautiful destinations</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="USA.jpg" class="d-block w-100" alt="USA">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="fw-bold">Town-Trek</h1>
+                <p>Your perfect travel companion</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>
+
+<!-- About -->
+<section id="about" class="container my-5">
+    <div class="col-lg-10 mx-auto border rounded p-4 bg-white shadow-sm">
+        <h2 class="text-primary">About Town-Trek</h2>
+        <p>
+            TownTrek is a user-friendly local guide website designed to help residents and visitors explore a town with ease.
+            It brings together essential information about popular attractions, restaurants, events, and hidden gems.
+            <br><br>
+            The platform focuses on simple navigation, visual appeal, and accurate local insights, making it easy for users
+            to plan trips and experience the town like a local.
+            <br><br>
+            Overall, TownTrek acts as a digital travel companion, helping people explore, enjoy, and make the most of their time.
+        </p>
+    </div>
+</section>
+
+<!--Control Flow-->
+<section id="how-it-works" class="container-md my-5">
+    <div class="col-lg-10 mx-auto border rounded p-4 bg-white shadow-sm">
+        <h2 class="text-primary mb-4">Flow</h2>
+
+        <div class="row text-center">
+            <!-- Step 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-5">
+                    <img src="london.jpeg" class="card-img-top img-fluid border-1" alt="Select country or city">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Country / City Visiting</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-5">
+                    <img src="destination.jpeg" class="card-img-top img-fluid border-1" alt="Explore destinations">
+                    <div class="card-body">
+                        <h5 class="card-title">2. Explore Destinations</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-5">
+                    <img src="tourist.jpeg" class="card-img-top img-fluid border-1" alt="Guide packages">
+                    <div class="card-body">
+                        <h5 class="card-title">3. Enjoy your Time.YOLO!!!!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="container my-5">
+    <div class="col-lg-10 mx-auto border rounded p-4 bg-white shadow-sm">
+        <h2 class="text-primary">Contact Town-Trek</h2>
+        <p><strong>Email:</strong> towntrekvlogs@gmail.com</p>
+        <p><strong>Phone:</strong> +44-1234567890</p>
+        <p><strong>Website:</strong> www.towntrektravel.com</p>
+        <p><strong>Get more insights by calling us.</strong></p>
+    </div>
+</section>
+
+<!--Footer-->
+<footer style="background-color: #0b2545;" class="text-light py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-start">
+                <p class="mb-0-small">&copy; 2025 TownTrek. All rights reserved</p>
+            </div>
+            <div class="col-md-6 text-end">
+                  <ul class="list-inline mb=0">
+                    <li class="list-inline-item"><a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white fs-5"><i class="fab fa-snapchat"></i></a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

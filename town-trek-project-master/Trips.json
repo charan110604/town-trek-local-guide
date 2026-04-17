@@ -1,0 +1,22 @@
+{
+  "trips": [
+    {
+      "id": 1,
+      "name": "Charan",
+      "email": "charan@gmail.com",
+      "destination": "Hyderabad",
+      "fromDate": "2025-02-10",
+      "toDate": "2025-02-15",
+      "status": "Pending"
+    },
+    {
+      "id": 2,
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "destination": "Bangalore",
+      "fromDate": "2025-03-20",
+      "toDate": "2025-03-25",
+      "status": "Pending"
+    }
+  ]
+}
